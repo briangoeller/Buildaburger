@@ -1,0 +1,95 @@
+{
+  "site": {
+    "title": "Buildaburger",
+    "tagline": "A polymath's index of thought projects, sorted by doneness."
+  },
+  "burgers": [
+    {
+      "slug": "growth-indexed-taxation",
+      "title": "Growth-Indexed Taxation",
+      "state": "served",
+      "started": "Feb 2026",
+      "served": "Apr 2026",
+      "summary": "A multiplier-based federal tax framework anchored to BEA Type II industry accounts. Five tiers, a secondary passive-income schedule, and a written rebuttal to the nationalization objection.",
+      "tags": ["policy", "economics", "white paper"],
+      "links": []
+    },
+    {
+      "slug": "multiplier-model",
+      "title": "The Multiplier Model",
+      "state": "served",
+      "started": "Apr 2026",
+      "served": "Apr 2026",
+      "summary": "Tools amplify skill distributions rather than democratizing them. Everyone has to be an expert on at least one endpoint. Originally framed against the synthesizer-anxiety / AI-anxiety parallel.",
+      "tags": ["AI", "strategy", "essay"],
+      "links": []
+    },
+    {
+      "slug": "cartograph",
+      "title": "The Cartograph",
+      "state": "served",
+      "started": "Mar 2026",
+      "served": "May 2026",
+      "summary": "A gazetteer of frameworks. 747+ entries across 23 disciplines, sorted into eight rigor bands, lineage-linked, lightly annotated. Shipped as a live static site.",
+      "tags": ["catalog", "epistemics"],
+      "links": [
+        { "label": "Live site", "url": "https://briangoeller.github.io/Framework-Catalog/" }
+      ]
+    },
+    {
+      "slug": "given-by-goller",
+      "title": "Given by Göller",
+      "state": "served",
+      "started": "Mar 2026",
+      "served": "Apr 2026",
+      "summary": "Three handbags from Platonic geometry — cube, sphere, tetrahedron — with handle cutouts in a closed three-way rotation. Sold only as sets of three. Distribution by gallery ceremony, not catalog.",
+      "tags": ["design", "brand"],
+      "links": []
+    },
+    {
+      "slug": "alignment-of-judgment",
+      "title": "The Alignment of Judgment",
+      "state": "grill",
+      "started": "May 2026",
+      "summary": "Role discretion, discretion capacity, and authority as the three objects whose convergence defines a healthy working relationship. A scoring instrument, a self-audit, and an essay on what management was for.",
+      "tags": ["management", "instrument"],
+      "links": []
+    },
+    {
+      "slug": "csi-thesis",
+      "title": "The CSI / Metavante Read",
+      "state": "grill",
+      "started": "Apr 2026",
+      "summary": "Reading CSI's Centerbridge / Langer trajectory as the Metavante playbook, and what that means for community banks tied to NuPoint. A thesis, not an artifact — but a load-bearing one for how PremierBank thinks about its core.",
+      "tags": ["banking", "M&A", "thesis"],
+      "links": []
+    },
+    {
+      "slug": "radial-transducer",
+      "title": "Radial Transducer & Tesla Shell",
+      "state": "grill",
+      "started": "~2016",
+      "summary": "Carbon-fiber breathing-ring drivers approximating MBL-style omnidirectional dispersion at a fraction of the cost. Plus a reverse-horn Tesla-valve rear-wave absorber as the buildable near-term experiment.",
+      "tags": ["audio", "physics", "build"],
+      "links": []
+    },
+    {
+      "slug": "quantum-gravity-limits",
+      "title": "Quantum Gravity & the Limits of Mathematics",
+      "state": "raw",
+      "started": "May 2026",
+      "summary": "Is QM/GR irreconcilability a hard limit of our axiomatic foundations, a missing-but-reachable mathematics, or just the wrong toolkit? Sharpened to one falsifiable calorimetry experiment as the only piece earning its keep.",
+      "tags": ["physics", "philosophy", "speculation"],
+      "links": []
+    },
+    {
+      "slug": "kwml-coaching",
+      "title": "KWML & the Interior Work",
+      "state": "raw",
+      "started": "Apr 2026",
+      "summary": "Coaching work using Moore & Gillette's archetypal framework. May or may not belong on a public site — held here as a placeholder while that question stays open.",
+      "tags": ["coaching", "private candidate"],
+      "links": []
+    }
+  ]
+}

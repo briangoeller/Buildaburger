@@ -1,0 +1,583 @@
+/* ============================================================
+   Buildaburger — design tokens
+   ============================================================ */
+
+:root {
+  /* Surfaces & ink */
+  --bg:           #F4EFE3;   /* warm paper */
+  --surface:      #FBF8EF;   /* card */
+  --surface-warm: #F0E9D6;   /* hover / divider */
+  --ink:          #1B1714;   /* primary text */
+  --ink-soft:     #4A423D;   /* secondary text */
+  --ink-mute:     #7A7066;   /* tertiary text */
+  --rule:         #DDD5C2;   /* hairlines */
+
+  /* State colors — mapped to the cooking metaphor */
+  --raw:    #A89B82;   /* oat / parchment — sitting on the counter */
+  --grill:  #C9921F;   /* mustard heat — actively cooking */
+  --served: #4D6B33;   /* pickle — finished */
+
+  /* Sparing accent */
+  --ketchup: #A8341F;  /* used only for emphasized links */
+
+  /* Typography */
+  --font-display: "Archivo Black", "Impact", system-ui, sans-serif;
+  --font-ui:      "Familjen Grotesk", system-ui, -apple-system, sans-serif;
+  --font-body:    "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+
+  /* Scale & rhythm */
+  --max-width:    1080px;
+  --gutter:       clamp(1.25rem, 3vw, 2rem);
+}
+
+/* ============================================================
+   Reset & base
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  font-feature-settings: "kern" 1, "liga" 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--ink-mute);
+  transition: text-decoration-color 0.15s ease;
+}
+
+a:hover {
+  text-decoration-color: var(--ketchup);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--ketchup);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+img { max-width: 100%; display: block; }
+
+/* ============================================================
+   Header — slim sticky bar with logo
+   ============================================================ */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+  backdrop-filter: blur(8px);
+}
+
+.site-header__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.875rem var(--gutter);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.logo:hover { text-decoration: none; }
+
+.logo__mark {
+  display: inline-block;
+  transform: skewX(-6deg);
+}
+
+.site-header__nav {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+/* ============================================================
+   Hero (home page only)
+   ============================================================ */
+
+.hero {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem var(--gutter) 3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.hero__eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--grill);
+  margin: 0 0 1.5rem;
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+  margin: 0 0 1.5rem;
+  color: var(--ink);
+}
+
+.hero__tagline {
+  font-family: var(--font-ui);
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  font-weight: 500;
+  line-height: 1.35;
+  margin: 0 0 2rem;
+  max-width: 38ch;
+  color: var(--ink-soft);
+}
+
+.hero__thesis {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  max-width: 62ch;
+  color: var(--ink-soft);
+}
+
+/* ============================================================
+   Section header (Served / On the Grill / Raw Ingredients)
+   ============================================================ */
+
+.section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem var(--gutter) 1rem;
+}
+
+.section + .section { padding-top: 1.5rem; }
+
+.section__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 2rem;
+}
+
+.section__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -0.02em;
+  margin: 0;
+  line-height: 1;
+}
+
+.section__title--served { color: var(--served); }
+.section__title--grill  { color: var(--grill); }
+.section__title--raw    { color: var(--raw); }
+
+.section__count {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--ink-mute);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   Burger cards (grid)
+   ============================================================ */
+
+.burgers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.burger-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  padding: 1.5rem 1.5rem 1.25rem;
+  text-decoration: none;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.burger-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--ink-soft);
+  box-shadow: 0 8px 24px -12px rgba(27, 23, 20, 0.18);
+  text-decoration: none;
+}
+
+.burger-card__stamp-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin: -0.5rem -0.5rem 0 0;
+}
+
+.burger-card__title {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--ink);
+}
+
+.burger-card__summary {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0;
+  flex-grow: 1;
+}
+
+.burger-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--rule);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-mute);
+}
+
+.burger-card__date::before {
+  content: "▸ ";
+  color: var(--ink-mute);
+}
+
+.burger-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-left: auto;
+}
+
+.tag {
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.125rem 0.5rem;
+  border: 1px solid var(--rule);
+  background: var(--surface-warm);
+  color: var(--ink-soft);
+  border-radius: 2px;
+}
+
+/* ============================================================
+   Doneness stamp — circular, hand-pressed feel
+   The signature element.
+   ============================================================ */
+
+.stamp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  border: 3px solid currentColor;
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.stamp__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.stamp__top, .stamp__bottom {
+  font-size: 0.5rem;
+  letter-spacing: 0.16em;
+  opacity: 0.6;
+}
+
+.stamp__main {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.stamp--raw    { color: var(--raw);    transform: rotate(-3deg); }
+.stamp--grill  { color: var(--grill);  transform: rotate(2deg);  }
+.stamp--served { color: var(--served); transform: rotate(-1deg); }
+
+.stamp--lg {
+  width: 140px;
+  height: 140px;
+  border-width: 4px;
+}
+
+.stamp--lg .stamp__main   { font-size: 1.25rem; letter-spacing: 0.04em; }
+.stamp--lg .stamp__top,
+.stamp--lg .stamp__bottom { font-size: 0.6875rem; letter-spacing: 0.22em; }
+
+/* ============================================================
+   Burger detail page
+   ============================================================ */
+
+.burger {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem var(--gutter) 5rem;
+}
+
+.burger__back {
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--ink-mute);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 2.5rem;
+}
+
+.burger__back:hover {
+  color: var(--ketchup);
+  text-decoration: none;
+}
+
+.burger__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.burger__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.025em;
+  margin: 0 0 1rem;
+  color: var(--ink);
+}
+
+.burger__meta {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--ink-mute);
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.burger__meta-item strong {
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  margin-right: 0.375rem;
+}
+
+.burger__body {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.burger__body h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: -0.015em;
+  margin: 2.5rem 0 0.75rem;
+  line-height: 1.15;
+}
+
+.burger__body h3 {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 1.0625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  margin: 2rem 0 0.5rem;
+}
+
+.burger__body p { margin: 0 0 1.25rem; }
+
+.burger__body a {
+  color: var(--ink);
+  text-decoration-color: var(--grill);
+  text-decoration-thickness: 2px;
+}
+
+.burger__body a:hover {
+  text-decoration-color: var(--ketchup);
+}
+
+.burger__body ul, .burger__body ol {
+  margin: 0 0 1.5rem;
+  padding-left: 1.25rem;
+}
+
+.burger__body li { margin-bottom: 0.5rem; }
+
+.burger__body blockquote {
+  margin: 1.5rem 0;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  border-left: 3px solid var(--grill);
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.burger__body code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--surface-warm);
+  padding: 0.125rem 0.375rem;
+  border-radius: 2px;
+}
+
+.burger__body hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2.5rem 0;
+}
+
+/* Links section at the foot */
+
+.burger__links {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+}
+
+.burger__links-title {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin: 0 0 1rem;
+}
+
+.burger__links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.burger__links a {
+  font-family: var(--font-ui);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--ink);
+  text-decoration-color: var(--grill);
+  text-decoration-thickness: 2px;
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+
+.site-footer {
+  max-width: var(--max-width);
+  margin: 4rem auto 0;
+  padding: 2rem var(--gutter);
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  color: var(--ink-mute);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* ============================================================
+   Loading / empty states
+   ============================================================ */
+
+.loading {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--ink-mute);
+  padding: 3rem var(--gutter);
+  text-align: center;
+}
+
+/* ============================================================
+   Reduced motion
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ============================================================
+   Mobile adjustments
+   ============================================================ */
+
+@media (max-width: 560px) {
+  .burger__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .stamp--lg {
+    width: 110px;
+    height: 110px;
+  }
+
+  .stamp--lg .stamp__main { font-size: 1rem; }
+}
