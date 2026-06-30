@@ -4,6 +4,19 @@
     "tagline": "A polymath's index of thought projects, sorted by doneness."
   },
   "burgers": [
+   {
+  "slug": "horizon-risk-assessment",
+  "title": "Horizon Risk Assessment",
+  "state": "served",
+  "started": "Jun 2026",
+  "served": "Jun 2026",
+  "summary": "An eight-dimension scoring instrument for community bank survival risk over a ten-year horizon. Self-contained HTML tool with Export/Import JSON, built to be sat in front of an executive team without a consultant in the room.",
+  "tags": ["banking", "instrument", "advisory"],
+  "links": [
+    { "label": "Live tool", "url": "https://briangoeller.github.io/Horizon-Risk-Assessment/" },
+    { "label": "Source on GitHub", "url": "https://github.com/briangoeller/Horizon-Risk-Assessment" }
+  ],
+}
     {
       "slug": "growth-indexed-taxation",
       "title": "Growth-Indexed Taxation",
