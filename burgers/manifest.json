@@ -15,8 +15,8 @@
   "links": [
     { "label": "Live tool", "url": "https://briangoeller.github.io/Horizon-Risk-Assessment/" },
     { "label": "Source on GitHub", "url": "https://github.com/briangoeller/Horizon-Risk-Assessment" }
-  ],
-}
+  ]
+},
     {
       "slug": "growth-indexed-taxation",
       "title": "Growth-Indexed Taxation",
