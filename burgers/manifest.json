@@ -26,8 +26,8 @@
       "summary": "A multiplier-based federal tax framework anchored to BEA Type II industry accounts. Five tiers, a secondary passive-income schedule, and a written rebuttal to the nationalization objection.",
       "tags": ["policy", "economics", "white paper"],
       "links": [
-  { "label": "White paper (DOCX)", "url": "https://github.com/briangoeller/Growth-Tax-Model/raw/main/Growth-Indexed-Taxation-White-Paper.pdf" },
-  { "label": "Supplementary section (DOCX)", "url": "https://github.com/briangoeller/Growth-Tax-Model/raw/main/Growth-Indexed-Taxation-Supplementary.pdf" },
+  { "label": "White paper (PDF)", "url": "https://github.com/briangoeller/Growth-Tax-Model/raw/main/Growth-Indexed-Taxation-White-Paper.pdf" },
+  { "label": "Supplementary section (PDF)", "url": "https://github.com/briangoeller/Growth-Tax-Model/raw/main/Growth-Indexed-Taxation-Supplementary.pdf" },
   { "label": "Revenue model (interactive)", "url": "https://briangoeller.github.io/Growth-Tax-Model/revenue-model.html" },
   { "label": "Source on GitHub", "url": "https://github.com/briangoeller/Growth-Tax-Model" }
 ]
