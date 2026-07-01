@@ -80,8 +80,9 @@
       "summary": "Agency, intelligence, and choice as attributions observers make into gaps in mechanism-visibility, grounded in Chaitin's undecidability. Demonstrated through the Light Switch Test. Publication kit complete, awaiting Zenodo → GitHub → PhilArchive → LessWrong push.",
       "tags": ["philosophy", "AI", "publication ready"],
       "links": [
-         { "label": "Thesis", "url": "https://briangoeller.github.com/The-Opacity-Thesis/opacity-thesis.md" ]
+        { "label": "Thesis", "url": "https://briangoeller.github.io/The-Opacity-Thesis.md" }
       ]
+      
     },
     {
       "slug": "independence-hall",
