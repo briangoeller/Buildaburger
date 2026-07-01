@@ -1,6 +1,6 @@
 # Buildaburger
 
-A polymath's index of thought projects, sorted by doneness.
+
 
 A static site, no build step, no framework, no database. Add a burger by editing a JSON file and dropping a markdown file. That's it.
 
