@@ -18,6 +18,14 @@
       ]
     },
     {
+  "slug": "self-defining-language",
+  "title": "Self-Defining Language",
+  "state": "raw",
+  "started": "May 2026",
+  "summary": "A typed term algebra where a word is a well-formed nested expression and meaning is fully recoverable from form — the spelling is the definition. Four closed types, full taxonomic decomposition as a hard commitment, a first kinship domain worked to normal form. Natural languages are treated as lossy projections below the algebra, with universal translation emergent and undecidability preserved as a feature via the equational choice.",
+  "tags": ["linguistics", "formal-logic", "philosophy", "speculation"]
+},
+    {
       "slug": "growth-indexed-taxation",
       "title": "Growth-Indexed Taxation",
       "state": "served",
