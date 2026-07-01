@@ -1,22 +1,22 @@
 {
   "site": {
     "title": "Buildaburger",
-    "tagline": "A buffet of projects."
+    "tagline": "A polymath's index of thought projects, sorted by doneness."
   },
   "burgers": [
-   {
-  "slug": "horizon-risk-assessment",
-  "title": "Horizon Risk Assessment",
-  "state": "served",
-  "started": "Jun 2026",
-  "served": "Jun 2026",
-  "summary": "An eight-dimension scoring instrument for community bank survival risk over a ten-year horizon. Self-contained HTML tool with Export/Import JSON, built to be sat in front of an executive team without a consultant in the room.",
-  "tags": ["banking", "instrument", "advisory"],
-  "links": [
-    { "label": "Live tool", "url": "https://briangoeller.github.io/Horizon-Risk-Assessment/" },
-    { "label": "Source on GitHub", "url": "https://github.com/briangoeller/Horizon-Risk-Assessment" }
-  ]
-},
+    {
+      "slug": "horizon-risk-assessment",
+      "title": "Horizon Risk Assessment",
+      "state": "served",
+      "started": "Jun 2026",
+      "served": "Jun 2026",
+      "summary": "An eight-dimension scoring instrument for community bank survival risk over a ten-year horizon. Self-contained HTML tool with Export/Import JSON, built to be sat in front of an executive team without a consultant in the room.",
+      "tags": ["banking", "instrument", "advisory"],
+      "links": [
+        { "label": "Live tool", "url": "https://briangoeller.github.io/Horizon-Risk-Assessment/" },
+        { "label": "Source on GitHub", "url": "https://github.com/briangoeller/Horizon-Risk-Assessment" }
+      ]
+    },
     {
       "slug": "growth-indexed-taxation",
       "title": "Growth-Indexed Taxation",
@@ -26,11 +26,11 @@
       "summary": "A multiplier-based federal tax framework anchored to BEA Type II industry accounts. Five tiers, a secondary passive-income schedule, and a written rebuttal to the nationalization objection.",
       "tags": ["policy", "economics", "white paper"],
       "links": [
-  { "label": "White paper (PDF)", "url": "https://github.com/briangoeller/Growth-Tax-Model/raw/main/Growth-Indexed-Taxation-White-Paper.pdf" },
-  { "label": "Supplementary section (PDF)", "url": "https://github.com/briangoeller/Growth-Tax-Model/raw/main/Growth-Indexed-Taxation-Supplementary.pdf" },
-  { "label": "Revenue model (interactive)", "url": "https://briangoeller.github.io/Growth-Tax-Model/revenue-model.html" },
-  { "label": "Source on GitHub", "url": "https://github.com/briangoeller/Growth-Tax-Model" }
-]
+        { "label": "White paper (PDF)", "url": "https://briangoeller.github.io/Growth-Tax-Model/Growth-Indexed-Taxation-White-Paper.pdf" },
+        { "label": "Supplementary section (PDF)", "url": "https://briangoeller.github.io/Growth-Tax-Model/Growth-Indexed-Taxation-Supplementary.pdf" },
+        { "label": "Revenue model (interactive)", "url": "https://briangoeller.github.io/Growth-Tax-Model/revenue-model.html" },
+        { "label": "Source on GitHub", "url": "https://github.com/briangoeller/Growth-Tax-Model" }
+      ]
     },
     {
       "slug": "multiplier-model",
@@ -38,7 +38,7 @@
       "state": "served",
       "started": "Apr 2026",
       "served": "Apr 2026",
-      "summary": "Tools amplify skill distributions rather than democratizing them. Everyone has to be an expert on at least one endpoint. Originally framed against the synthesizer-anxiety / AI-anxiety parallel.",
+      "summary": "Tools amplify skill distributions rather than democratizing them. Everyone has to be an expert on at least one endpoint. Extended into a row model mapping institutional roles across trigger, discovery, transformation, trajectory, and flourishing outcome.",
       "tags": ["AI", "strategy", "essay"],
       "links": []
     },
@@ -65,11 +65,38 @@
       "links": []
     },
     {
+      "slug": "opacity-thesis",
+      "title": "The Opacity Thesis",
+      "state": "grill",
+      "started": "May 2026",
+      "summary": "Agency, intelligence, and choice as attributions observers make into gaps in mechanism-visibility, grounded in Chaitin's undecidability. Demonstrated through the Light Switch Test. Publication kit complete, awaiting Zenodo → GitHub → PhilArchive → LessWrong push.",
+      "tags": ["philosophy", "AI", "publication ready"],
+      "links": []
+    },
+    {
+      "slug": "independence-hall",
+      "title": "Independence Hall",
+      "state": "grill",
+      "started": "Feb 2026",
+      "summary": "A blind political alignment quiz that matches voters to six party platforms across 22 sub-domains. Four-point forced choice, calibration-validated for neutrality (39-39 cross-party symmetry). Includes the Chestnut Street Declaration — a candidate-facing self-declaration sub-brand.",
+      "tags": ["civic tech", "instrument", "product"],
+      "links": []
+    },
+    {
+      "slug": "org-impact-mapper",
+      "title": "The Org Impact Mapper",
+      "state": "grill",
+      "started": "Feb 2026",
+      "summary": "Two-axis framework — External Impact × Organizational Leverage — resolving every organizational seat into Catalyst, Rainmaker, Linchpin, or Sustainer. Companion to the Alignment of Judgment work.",
+      "tags": ["management", "framework"],
+      "links": []
+    },
+    {
       "slug": "alignment-of-judgment",
       "title": "The Alignment of Judgment",
       "state": "grill",
       "started": "May 2026",
-      "summary": "Role discretion, discretion capacity, and authority as the three objects whose convergence defines a healthy working relationship. A scoring instrument, a self-audit, and an essay on what management was for.",
+      "summary": "Role discretion, discretion capacity, and authority as the three objects whose convergence defines a healthy working relationship. Includes a scoring instrument, a manager's wizard, and the Six-Type Audit for executive self-assessment.",
       "tags": ["management", "instrument"],
       "links": []
     },
@@ -89,6 +116,51 @@
       "started": "~2016",
       "summary": "Carbon-fiber breathing-ring drivers approximating MBL-style omnidirectional dispersion at a fraction of the cost. Plus a reverse-horn Tesla-valve rear-wave absorber as the buildable near-term experiment.",
       "tags": ["audio", "physics", "build"],
+      "links": []
+    },
+    {
+      "slug": "granite-flywheel-power-supply",
+      "title": "The Granite Flywheel Power Supply",
+      "state": "grill",
+      "started": "May 2026",
+      "summary": "An isolated flywheel-based power supply for high-end analog audio. Granite column, carbon-fiber rim, multiple galvanically-isolated outputs. Physics worked out end to end; single-output turntable supply as V1.",
+      "tags": ["audio", "physics", "product"],
+      "links": []
+    },
+    {
+      "slug": "change-readiness-quotient",
+      "title": "The Change Readiness Quotient",
+      "state": "grill",
+      "started": "Mar 2026",
+      "summary": "A framework and formula for scoring an organization's readiness to observe and respond to change events across domains, with the observer's position in the pipeline treated as the hidden variable that most instrumentation-focused approaches miss.",
+      "tags": ["banking", "framework", "instrument"],
+      "links": []
+    },
+    {
+      "slug": "generator-thesis",
+      "title": "The Generator Thesis",
+      "state": "grill",
+      "started": "Jun 2026",
+      "summary": "Creative capacity as shaper × generator (× hardware substrate in physical domains). The generator cannot be trained because generation has no error signal. Grounded in Kolmogorov complexity, stress-tested across six domains.",
+      "tags": ["philosophy", "psychology", "framework"],
+      "links": []
+    },
+    {
+      "slug": "macrocycle-hypothesis",
+      "title": "The Macrocycle Hypothesis",
+      "state": "grill",
+      "started": "Apr 2026",
+      "summary": "A Turchin-derived structural-demographic reading of the 2020s that identifies 1900 (not 1970) as the structural twin, with the non-kinetic export valve as the master variable. Includes the Lifeboat Capitalism and Tiering framings.",
+      "tags": ["history", "policy", "thesis"],
+      "links": []
+    },
+    {
+      "slug": "bank-weather-platform",
+      "title": "The Bank Balance-Sheet Weather Platform",
+      "state": "grill",
+      "started": "Mar 2026",
+      "summary": "Agent-based bank simulation grounded in a specific bank's transaction data at individual-account granularity. NOAA-style ensemble modeling of open-world natural-language scenarios. Distinct from central bank cohort models. Career-positioning project.",
+      "tags": ["banking", "AI", "product"],
       "links": []
     },
     {
