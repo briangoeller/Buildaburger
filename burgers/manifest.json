@@ -173,6 +173,87 @@
       "links": []
     },
     {
+      "slug": "two-mode-universe",
+      "title": "The Two-Mode Universe",
+      "state": "raw",
+      "started": "Mar 2026",
+      "summary": "Cosmological speculation. Reality runs in two modes — unrendered (cheap quantum potential) and rendered (classical, substrate cost paid) — with dark matter as the observable signature of the substrate. Breaks on the causality direction; may partially survive under a Wolfram reading.",
+      "tags": ["physics", "philosophy", "speculation"],
+      "links": []
+    },
+    {
+      "slug": "backward-facing-observer",
+      "title": "The Backward-Facing Observer",
+      "state": "raw",
+      "started": "Feb 2026",
+      "summary": "A phenomenological reframe. Holding the future as tehom (formless, unknowable) rather than as extrapolation. Changes the felt problem of decision-making from choosing between predictions to choosing which direction to face when the unknowable arrives.",
+      "tags": ["philosophy", "phenomenology"],
+      "links": []
+    },
+    {
+      "slug": "radar-projection-art",
+      "title": "The Radar Projection Installation",
+      "state": "raw",
+      "started": "Jun 2026",
+      "summary": "A vintage box camera on a wooden surveyor's tripod, housing a pico projector, displaying live NOAA radar imagery onto a 1931 paper map of Wisconsin. Current weather crossing past geography — the mismatch is the piece.",
+      "tags": ["art", "build"],
+      "links": []
+    },
+    {
+      "slug": "goetic-seals",
+      "title": "The Goetic Seals Investigation",
+      "state": "raw",
+      "started": "May 2026",
+      "summary": "Do the 72 seals of the Lesser Key of Solomon encode extractable information under standard image-analysis transforms? Asymmetry-distribution test as the opening move. Nothing supernatural claimed — the question is whether the humans who designed them encoded structure.",
+      "tags": ["speculation", "computational"],
+      "links": []
+    },
+    {
+      "slug": "mono-audio-poc",
+      "title": "The Mono Audio POC",
+      "state": "raw",
+      "started": "Apr 2026",
+      "summary": "For compromised listening conditions, a properly-derived mono may beat broken stereo. Coherence-weighted M/S summation with decorrelated Side re-injection. Scoped to a Raspberry Pi + HiFiBerry HAT proof of concept.",
+      "tags": ["audio", "DSP", "build"],
+      "links": []
+    },
+    {
+      "slug": "siderophile",
+      "title": "Siderophile",
+      "state": "raw",
+      "started": "Mar 2026",
+      "summary": "Speculative fiction — a K-Pg-boundary civilization whose collapse produced the iridium layer. Dual-timeline structure intercutting the ancient story with a modern scientist studying siderophile elements. Same question as Hephaestion's Tomb at civilization scale.",
+      "tags": ["fiction", "speculation"],
+      "links": []
+    },
+    {
+      "slug": "hephaestion-tomb",
+      "title": "Hephaestion's Tomb",
+      "state": "raw",
+      "started": "long-standing",
+      "summary": "A group of friends run a lifelong contest — the greatest life gets a statue after they all pass. The book ends without telling the reader who won. Jungian archetypes as the scoring system the characters don't know they're being judged on. Same question as Siderophile at single-life scale.",
+      "tags": ["fiction", "philosophy"],
+      "links": []
+    },
+    {
+      "slug": "pre-extinction-mythology",
+      "title": "The Pre-Extinction Mythology",
+      "state": "raw",
+      "started": "Feb 2026",
+      "summary": "A mythology project drawing on tehom, the Emerald Tablet, and rabbinic cosmology as source materials for a message-across-mass-extinctions tradition. The value is in designing what such a message would need to say, not in producing the document itself.",
+      "tags": ["fiction", "mythology"],
+      "links": []
+    },
+    {
+      "slug": "four-space-cognition",
+      "title": "The Four-Space Cognition Model",
+      "state": "raw",
+      "started": "long-standing",
+      "summary": "Self-model of cognition: answer-ready / computing / unanswerable / question-generating (tehom). The fourth region felt as presence, historically as burden, reframed in coaching as gift. Public per the site's therapeutic-offloading rationale.",
+      "tags": ["phenomenology", "personal"],
+      "links": []
+    },
+    {
       "slug": "kwml-coaching",
       "title": "KWML & the Interior Work",
       "state": "raw",
