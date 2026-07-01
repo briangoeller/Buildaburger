@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Kitchen — Buildaburger</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Familjen+Grotesk:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/kitchen.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="logo" href="index.html"><span class="logo__mark">Buildaburger</span></a>
+    <nav class="site-header__nav-links">
+      <a href="index.html">The Counter</a>
+      <a href="kitchen.html" class="active">The Kitchen</a>
+    </nav>
+  </div>
+</header>
+
+<section class="kitchen-hero">
+  <p class="kitchen-hero__eyebrow">Back of house</p>
+  <h1 class="kitchen-hero__title">The Kitchen</h1>
+  <p class="kitchen-hero__tagline">What's still to do on each burger, and how close everything is to plated.</p>
+</section>
+
+<main class="kitchen">
+  <section class="kitchen-summary" id="summary">
+    <div class="summary-card">
+      <p class="summary-label">Overall</p>
+      <p class="summary-value"><span id="overall-pct">—</span><span class="summary-unit">%</span></p>
+      <div class="progress-bar"><div class="progress-fill" id="overall-fill"></div></div>
+    </div>
+    <div class="summary-card">
+      <p class="summary-label">Served</p>
+      <p class="summary-value" id="served-count">—</p>
+      <p class="summary-note">plated burgers</p>
+    </div>
+    <div class="summary-card">
+      <p class="summary-label">On the grill</p>
+      <p class="summary-value" id="grill-count">—</p>
+      <p class="summary-note">actively cooking</p>
+    </div>
+    <div class="summary-card">
+      <p class="summary-label">Raw</p>
+      <p class="summary-value" id="raw-count">—</p>
+      <p class="summary-note">ingredients on the counter</p>
+    </div>
+  </section>
+
+  <section class="kitchen-controls">
+    <div class="kitchen-controls__filters">
+      <label class="filter-toggle">
+        <input type="checkbox" id="hide-complete">
+        <span>Hide fully-completed burgers</span>
+      </label>
+      <label class="filter-toggle">
+        <span>State:</span>
+        <select id="filter-state">
+          <option value="all">All</option>
+          <option value="served">Served</option>
+          <option value="grill">On the grill</option>
+          <option value="raw">Raw</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="kitchen-controls__export">
+      <span class="pending-note" id="pending-note"></span>
+      <button class="export-btn" id="export-btn" disabled>Export updated manifest</button>
+      <button class="reset-btn" id="reset-btn">Reset pending</button>
+    </div>
+  </section>
+
+  <div class="kitchen-table-wrap">
+    <table class="kitchen-table" id="kitchen-table">
+      <thead>
+        <tr>
+          <th class="col-burger">Burger</th>
+          <th class="col-state">State</th>
+          <th class="col-task">Rewrite</th>
+          <th class="col-task">Repo</th>
+          <th class="col-task">Artifacts</th>
+          <th class="col-task">Upload</th>
+          <th class="col-task">Cross-post</th>
+          <th class="col-notes">Notes</th>
+          <th class="col-progress">Progress</th>
+        </tr>
+      </thead>
+      <tbody id="kitchen-rows">
+        <tr><td colspan="9" class="loading">Firing up the grill&hellip;</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <section class="kitchen-legend">
+    <h2 class="kitchen-legend__title">Legend</h2>
+    <ul>
+      <li><span class="task-cell task-cell--done">✓</span> — done</li>
+      <li><span class="task-cell task-cell--undone">·</span> — not yet done</li>
+      <li><span class="task-cell task-cell--na">—</span> — doesn't apply to this burger</li>
+    </ul>
+    <p class="kitchen-legend__note">
+      Click any cell to cycle through done → undone → N/A → done. Changes are held locally until you export.
+      When you're ready to save, click <strong>Export updated manifest</strong> — it copies a new
+      <code>manifest.json</code> to your clipboard that you paste into GitHub, overwriting the existing file.
+      Push, and the state becomes authoritative across devices. Nothing is saved to GitHub automatically.
+    </p>
+  </section>
+</main>
+
+<!-- Modal for editing notes -->
+<div class="notes-modal" id="notes-modal">
+  <div class="notes-modal__inner">
+    <p class="notes-modal__eyebrow">Note for</p>
+    <h3 class="notes-modal__title" id="notes-modal-title">—</h3>
+    <textarea id="notes-modal-textarea" placeholder="A freeform note about what's next on this burger, or anything the five-column template doesn't capture."></textarea>
+    <div class="notes-modal__actions">
+      <button class="btn-secondary" id="notes-modal-cancel">Cancel</button>
+      <button class="btn-primary" id="notes-modal-save">Save note</button>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <span>&copy; Brian Goeller</span>
+  <span><a href="index.html">&larr; back to the counter</a></span>
+</footer>
+
+<script src="js/kitchen.js"></script>
+</body>
+</html>
